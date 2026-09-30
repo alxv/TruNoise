@@ -13,36 +13,6 @@ TruNoise is built for reliability at 3 AM: continuous background playback, alarm
 - **TruNoise Pro** (one-time IAP) — 90 curated sounds, blue & violet, unlimited saves, overnight Pro playlists, 10-band EQ, Shortcuts/Siri, optional binaural underlay
 
 TruNoise does not provide medical advice. Binaural tones are for relaxation only.
-
-## Requirements
-
-- iOS (see Xcode project deployment target)
-- Xcode 16+ recommended
-- Apple Developer account for device / App Store builds
-
-## Project layout
-
-| Path | Purpose |
-|------|---------|
-| `TruNoise/` | Main app (SwiftUI, audio engine, StoreKit, intents) |
-| `TruNoiseWidgets/` | Home Screen / Lock Screen widgets |
-| `TruNoiseShared/` | App Group bridge between app and widgets |
-| `TruNoiseTests/` | Unit tests |
-| `AppStore/` | App Store Connect copy & setup guide |
-| `QA/ReleaseChecklist.md` | Manual release QA |
-| `Privacy.md` | Privacy policy (host at your Privacy Policy URL) |
-
-## Build & run
-
-1. Open `TruNoise.xcodeproj` in Xcode.
-2. Select the **TruNoise** shared scheme.
-3. For local IAP testing: **Edit Scheme → Run → Options → StoreKit Configuration** → `TruNoise/Products.storekit`.
-4. Run on a Simulator or device.
-
-```bash
-xcodebuild -scheme TruNoise -destination 'platform=iOS Simulator,name=iPhone 17' test
-```
-
 ## Free vs Pro
 
 | | Free | Pro (`com.trunoise.app.pro`) |
@@ -52,23 +22,6 @@ xcodebuild -scheme TruNoise -destination 'platform=iOS Simulator,name=iPhone 17'
 | Saved mixes | 1 (pink/brown) | Unlimited |
 | Sleep timer | Up to 2 hours | Overnight lengths (3–10 hr) |
 | EQ / binaural / Pro playlists | — | Included |
-
-## Identifiers
-
-| Item | Value |
-|------|--------|
-| Bundle ID | `com.trunoise.app` |
-| Widgets | `com.trunoise.app.widgets` |
-| App Group | `group.com.trunoise.app` |
-| URL scheme | `trunoise://` |
-| Pro IAP | `com.trunoise.app.pro` (non-consumable) |
-
-## App Store
-
-- Metadata & ASO: [`AppStore/AppStoreCopy.md`](AppStore/AppStoreCopy.md)
-- Connect setup: [`AppStore/AppStoreConnectSetup.md`](AppStore/AppStoreConnectSetup.md)
-- Privacy policy: [`Privacy.md`](Privacy.md) → publish at `https://trunoise.app/privacy`
-- Support: `https://trunoise.app/support`
 
 ## Privacy
 
