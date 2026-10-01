@@ -15,7 +15,7 @@ TruNoise is built for reliability at 3 AM: continuous background playback, alarm
 TruNoise does not provide medical advice. Binaural tones are for relaxation only.
 ## Free vs Pro
 
-| | Free | Pro (`com.trunoise.app.pro`) |
+| | Free | Pro  |
 |--|------|------------------------------|
 | Colors | Pink, brown | + White, green, blue, violet |
 | Sounds | Free essentials | 90 curated Pro sounds |
